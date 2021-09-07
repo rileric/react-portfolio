@@ -1,38 +1,112 @@
-.App {
-  text-align: center;
+/* .ui-test {
+    border: solid black
+} */
+
+/* Colors */
+.pf-bg-primary {
+    background-color: #00afb9;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.pf-bg-secondary {
+    background-color: #fdfcdc;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.pf-bg-contrast {
+    background-color: #f07167;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.pf-bg-white {
+    background-color: #ffffff;
 }
 
-.App-link {
-  color: #61dafb;
+.pf-bg-black {
+    background-color: #000000;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Basic formatting */
+.center-content {
+    text-align: center;
+}
+
+/* from https://css-tricks.com/centering-css-complete-guide/ */
+.center-parent {   
+    position: relative;
+}
+
+/* from https://css-tricks.com/centering-css-complete-guide/ */
+.center-child {
+    margin: auto;
+}
+
+.pf-header {
+    min-height: 10%;
+    max-height: 20%;
+    position: sticky;
+    z-index: 1;
+    top: 0;
+}
+
+.logo-col {
+    width: 30%;
+}
+.logo {
+    max-width: 100%;
+}
+
+.pf-intro {
+    min-height: 50%;
+    z-index: -1;
+    margin: 0 10px;
+    position: relative;
+}
+
+.pf-footer {
+    min-height: 10px;
+    max-height: 10%;
+    position: relative;
+}
+.footer-link {
+    text-decoration: none;
+}
+
+.footer-link:link {
+    color: #000000;
+}
+.footer-link:visited {
+    text-decoration: solid;
+}
+.footer-link:hover {
+   font-weight: bold;
+}
+.footer-link:active {
+    font-weight: bolder;
+}
+
+.extra-space {
+    display: none;
+}
+
+/* Projects */
+.project-thumbnail, .profilePic {
+    max-width: 30%;
+    border: solid white;
+}
+.project-item {
+    justify-content: center;
+    min-height: 600px;
+    
+}
+
+@media all and (min-width: 700px) {
+    .profilePic {
+        width: 100px
+    }
+
+    .extra-space {
+        display: inline;
+    }
+
+    .mobile-only {
+        display: none;
+    }
 }

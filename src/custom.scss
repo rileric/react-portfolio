@@ -1,0 +1,15 @@
+// Override default variables before the import
+// Intro tabs
+$nav-pills-link-active-color: #ffffff;
+$nav-pills-link-active-bg: #f07167;
+$nav-link-color: #000000;
+
+/* // Carousel button colors
+ $carousel-control-color: #ffc107;
+$carousel-indicator-active-bg: #ffc107;
+$carousel-dark-indicator-active-bg: purple; 
+*/
+
+// Import Bootstrap and its default variables
+/* @import '~bootstrap/dist/css/bootstrap.min.css'; */
+@import '~bootstrap/scss/bootstrap.scss';
